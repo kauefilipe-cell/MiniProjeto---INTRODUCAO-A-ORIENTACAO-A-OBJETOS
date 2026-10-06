@@ -1,0 +1,13 @@
+// Teste da Etapa 3: acrescente ao final do main
+System.out.println("--- Etapa 3 ---");
+carrinho.adiciona(livro);
+System.out.println(carrinho.getQuantidade());
+System.out.println(carrinho.getTotal());
+carrinho.remove(0);
+System.out.println(carrinho.getQuantidade());
+System.out.println(carrinho.getTotal());
+carrinho.remove(livro);
+System.out.println(carrinho.getQuantidade());
+for (Livro item : carrinho.getLivros()) {
+    System.out.println(item.getNome());
+}

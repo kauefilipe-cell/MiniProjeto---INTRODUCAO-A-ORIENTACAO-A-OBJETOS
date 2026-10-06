@@ -1,0 +1,13 @@
+// Teste da Etapa 1: acrescente ao final do main
+System.out.println("--- Etapa 1 ---");
+Livro livro = new Livro(new Autor("Herbert Schildt"));
+livro.setNome("   java para iniciantes  ");
+System.out.println("[" + livro.getNome() + "]");
+System.out.println(livro.setIsbn("978-85-66250-46-6"));
+System.out.println(livro.setIsbn("978-85-662"));
+System.out.println(livro.setIsbn("978-85-6625A-46-6"));
+System.out.println(livro.getIsbn());
+System.out.println(livro.setValor("59.90"));
+System.out.println(livro.setValor("59,90"));
+System.out.println(livro.setValor("abc"));
+System.out.println(livro.getValor());

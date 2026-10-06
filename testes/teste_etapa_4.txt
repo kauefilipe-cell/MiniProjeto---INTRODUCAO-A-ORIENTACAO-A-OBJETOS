@@ -1,0 +1,17 @@
+// Teste da Etapa 4: acrescente ao final do main e importe Catalogo
+System.out.println("--- Etapa 4 ---");
+desbravando.setDataPublicacao(LocalDate.of(2014, 1, 15));
+cabeca.setDataPublicacao(LocalDate.of(2005, 5, 20));
+Catalogo catalogo = new Catalogo();
+catalogo.cadastra(desbravando);
+catalogo.cadastra(cabeca);
+catalogo.cadastra(livro);
+System.out.println(catalogo.getTotalDeLivros());
+System.out.println(catalogo.buscaPorTitulo("  desbravando java ").getNome());
+System.out.println(catalogo.buscaPorTitulo("Java Avancado"));
+System.out.println(catalogo.buscaPorTrecho("java").size());
+System.out.println(catalogo.publicadosAntes(LocalDate.of(2010, 1, 1)).size());
+System.out.println(catalogo.adicionaCategoria("  Programacao "));
+System.out.println(catalogo.adicionaCategoria("programacao"));
+System.out.println(catalogo.adicionaCategoria("Java"));
+System.out.println(catalogo.getCategorias());

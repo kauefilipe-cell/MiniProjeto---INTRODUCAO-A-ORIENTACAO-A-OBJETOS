@@ -1,0 +1,6 @@
+// Teste da Etapa 2: acrescente ao final do main e importe java.time.LocalDate
+System.out.println("--- Etapa 2 ---");
+livro.setDataPublicacao(LocalDate.of(2014, 1, 15));
+System.out.println(livro.anosDesdeAPublicacao(LocalDate.of(2026, 10, 1)));
+System.out.println(livro.anosDesdeAPublicacao(LocalDate.of(2024, 1, 14)));
+livro.mostrarDetalhes();
